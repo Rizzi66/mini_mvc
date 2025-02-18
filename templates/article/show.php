@@ -12,6 +12,14 @@
   <div>  
     <h2><?= $article->getTitle();?></h2>
     <p><?= $article->getDescription();?></p>
+    <div>
+      <?php foreach ($comments as $comment) { ?>
+        <div>
+          <p>User : <?= $comment->getId();?></p>
+          <p><?= $comment->getComment();?></p>
+        </div>
+      <?php } ?>
+    </div>
   </div>
 
 

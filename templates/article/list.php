@@ -14,7 +14,6 @@
   <div>  
     <h2><?= $article->getTitle();?></h2>
     <a href="index.php?controller=article&action=show&id=<?=$article->getId();?>">Lire plus...</a>
-
   </div>
 
 
